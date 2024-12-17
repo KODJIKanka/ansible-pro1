@@ -4,3 +4,7 @@
     ansible.builtin.apt:
       name: apache2
       state: present
+  - name: Redémarrer Apache
+    ansible.builtin.service:
+      name: apache2
+      state: restarted
